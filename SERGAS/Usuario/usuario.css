@@ -1,0 +1,69 @@
+.modulos {
+    background: #FFFFFF;
+    border-radius: 26px;
+}
+
+#usuario {
+    position: absolute;
+    width: 438px;
+    height: 204px;
+    left: 210px;
+    top: 101px;
+
+}
+
+#userimg {
+    width: 126px;
+    height: 126px;
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+
+#chevron {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin-top: 150px;
+    margin-left: 225px;
+
+}
+
+
+#nombreuser {
+    position: absolute;
+    font-size: 32px;
+    bottom: 100px;
+    left: 180px;
+    font-family: Visby Round CF medium;
+}
+
+
+#estadouser {
+    position: absolute;
+    font-size: 17px;
+    bottom: 80px;
+    left: 180px;
+    font-family: Visby Round CF regular;
+    color: #6C757D;
+}
+
+
+#resumen {
+    position: absolute;
+    width: 850px;
+    height: 204px;
+    left: 703px;
+    top: 95px;
+}
+
+
+#grafica {
+
+    position: absolute;
+    width: 1308px;
+    height: 352px;
+    left: 210px;
+    top: 360px;
+}
+

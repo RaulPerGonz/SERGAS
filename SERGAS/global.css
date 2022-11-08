@@ -1,88 +1,49 @@
 body {
   background-color: aliceblue;
-  margin: 0;
 }
 
-
-
 .header {
-  overflow: hidden;
-  padding: 20px 10px;
+  padding: 30px;
+  text-align: center;
   background: #59A5D8;
+  color: white;
+  font-size: 15px;
 }
 
 .footer {
-  overflow: hidden;
-  padding: 20px 10px;
-  background: #59A5D8;
-
-}
-
-.idiomas {
-  float: right;
-  margin-right: 30px;
-  color: white;
-  text-align: end;
-
-}
-
-#logoFotter {
-  float: right;
-}
-
-#iconoSergas {
-  float: left;
-  width: auto;
-  height: 80px;
-  margin-left: 10px;
-
-
-}
-
-#textoSergas {
-  float: left;
-  margin-top: 20px;
-  padding: 5px;
-  width: 150px;
-  height: auto;
-}
-
-
-#logoUE {
-  margin-top: 10px;
-  margin-right: 10px;
-  display: block;
-  float: right;
-  width: auto;
-  height: 70px;
-}
-
-#iconoXunta {
-  margin-top: 10px;
-  margin-left: 15px;
-  display: block;
-  float: left;
-  width: auto;
-  height: 50px;
-}
-
-#galiciaLogo {
-  margin-top: 10px;
-  margin-right: 10px;
-  display: block;
-  float: right;
-  width: auto;
-  height: 50px;
-}
-
-#copyright h5 {
-  margin-left: 200px;
-  margin-right: 200px;
+  padding: 60px;
   text-align: center;
+  background: #59A5D8;
   color: white;
-  font-family: 'Visby Round CF';
-  font-style: normal;
-  font-weight: 300;
+  font-size: 15px;
+}
+
+h1 {
+  font-size: 36px;
+  font-family: Visby Round CF;
+  font-style: Demi Bold;
+}
+
+h2 {
+  font-size: 32px;
+  font-family: Visby Round CF;
+  font-style: Medium;
+}
+
+h3 {
+  font-size: 17px;
+  font-family: Visby Round CF;
+  font-style: Regular;
+}
+
+h4 {
+  font-size: 15px;
+  font-family: Visby Round CF;
+  font-style: regular;
+}
+
+h5 {
   font-size: 11px;
-  line-height: 13px;
+  font-family: Visby Round CF;
+  font-style: Light;
 }
