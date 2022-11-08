@@ -1,0 +1,19 @@
+body{
+    background-color: aliceblue;
+}
+
+.header {
+    padding: 30px;
+    text-align: center;
+    background: #59A5D8;
+    color: white;
+    font-size: 15px;
+  }
+
+  .footer {
+    padding: 60px;
+    text-align: center;
+    background: #59A5D8;
+    color: white;
+    font-size: 15px;
+  }
