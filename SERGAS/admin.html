@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sergas</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="admin.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+
+
+
+
+</head>
+
+<body>
+
+    <div class="header">
+
+        <img id="iconoSergasAlt" src="imagenes/logoAlt.png">
+        <img id="textoSergasAlt" src="imagenes/SergasAlt.png">
+        <img id="logoUE" src="imagenes/banderaEuropa.png">
+
+        <div class="idiomas">
+            <h4 class="gallegoText">Gallego</h4>
+            <h4>Castellano</h4>
+        </div>
+    </div>
+
+
+    <div class="contenido">
+
+        <div class="contmodular">
+
+            <div id="usuario" class="modulos">
+                <img id="userimg" src="imagenes/user.png">
+                <h2 id="nombreuser">Dr.Ramirez</h2>
+                <h3 id="estadouser">Usuario</h3>
+                <img id="desplegableuser" src="imagenes/chevron-down.png">
+            </div>
+
+            <div id="resumen" class="modulos">
+
+                <h2 id="resumensemanal">Resumen semanal
+                    <hr>
+                </h2>
+
+                <table class="estados">
+                    <tr>
+                        <td class="bordes" id="numactivo">
+                            <h2>725</h2>
+                        </td>
+                        <td class="bordes" id="numestrecho">
+                            <h2>584</h2>
+                        </td>
+                        <td class="bordes" id="numnocontagiado">
+                            <h2>25</h2>
+                        </td>
+                        <td class="bordes" id="numexpirado">
+                            <h2>19874</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="bordes">
+                            <h3>Contagio </h3>
+                            <h3>activo</h3>
+                        </td>
+                        <td class="bordes">
+                            <h3>Contagio</h3>
+                            <h3>estrecho</h3>
+                        </td>
+                        <td class="bordes">
+                            <h3>No</h3>
+                            <h3>contagiado</h3>
+                        </td>
+                        <td class="bordes">
+                            <h3>Contagio</h3>
+                            <h3>expirado</h3>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+
+
+        </div>
+        <div class="contmodular2">
+            <div id="grafica" class="modulos">
+                <canvas id="myChart"></canvas>
+            </div>
+
+            <div id="añadirPaciente" class="modulos">
+
+                <h2 id="altaPaciente1">Dar de alta un</h2>
+                <h2 id="altaPaciente2">paciente</h2>
+
+                <img id="userañadirpaciente" src="imagenes/añadirpaciente.png">
+            </div>
+
+        </div>
+
+        <div id="tabla" class="modulos">
+            
+            <div class="busqueda">
+                <img id="lupa" src="imagenes/lupa.png">
+                <div id="filtros">
+                    <h4 id="busquedaTexto">Buscar por nombre,estado...</h4>
+                    <h4>Estado</h4>
+                    <div id="estados">
+
+                        <div class="estado">
+                            <div class="bola" id="activo"></div>
+                            <h4 class="estadoTexto">Contagio activo</h4>
+                        </div>
+
+                        <div class="estado" id="estadoEstrecho">
+                            <div class="bola" id="estrecho"></div>
+                            <h4 class="estadoTexto">Contagio estrecho</h4>
+                        </div>
+
+                        <div class="estado" id="estadoNoContagiado">
+                            <div class="bola" id="noContagiado"></div>
+                            <h4 class="estadoTexto">No Contagiado</h4>
+                        </div>
+
+                        <div class="estado">
+                            <div class="bola" id="expirado"></div>
+                            <h4 class="estadoTexto">Contagio expirado</h4>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div>
+                <table class="tablapacientes">
+                    <tr>
+                        <th>
+                            <h4>Nombre</h4>
+                        </th>
+                        <th>
+                            <h4>Correo electronico</h4>
+                        </th>
+                        <th>
+                            <h4>Telefono</h4>
+                        </th>
+                        <th>
+                            <h4>DNI</h4>
+                        </th>
+                        <th>
+                            <h4>Estado</h4>
+                        </th>
+                        <th>
+                            <h4>Editar</h4>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td class="bordedrch">
+                            <div class="bordeEditar">
+                                <h4>Nerea Lopez</h4>
+                            </div>
+
+                        </td>
+                        <td>
+                            <div class="bordeEditar">
+                                <h4>wohora6575@cebaike.com</h4>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="bordeEditar">
+                                <h4>123456789</h4>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="bordeEditar">
+                                <h4>90711765H</h4>
+                            </div>
+                        </td>
+                        <td>
+                            <div id="bordeEditarEstado">
+                                <h4 class="activo">Contagio activo</h4>
+                                <div id="iconoFlecha">
+                                    <img id="iconoFlechaArriba" src="imagenes/flecha_arriba.png">
+                                    <img id="iconoFlechaAbajo" src="imagenes/flecha_abajo.png">
+                                </div>
+
+                            </div>
+                        </td>
+                        <td class="borderizq"> <img id="edit" src="imagenes/editazul.png"></td>
+                    </tr>
+                    <tr>
+                        <td class="bordedrch">
+                            <h4 class="nombrepaciente">Andrea </h4>
+                            <h4 class="apellidopaciente">Lopez Perez</h4>
+                        </td>
+                        <td>
+                            <h4>iabarcae@yahoo.es</h4>
+                        </td>
+                        <td>
+                            <h4>524584569</h4>
+                        </td>
+                        <td>
+                            <h4>39057431G</h4>
+                        </td>
+                        <td>
+                            <h4 class="estrecho">Contagio estrecho</h4>
+                        </td>
+                        <td class="borderizq"> <img id="edit" src="imagenes/edit.png"></td>
+                    </tr>
+                    <tr>
+                        <td class="bordedrch">
+                            <h4 class="nombrepaciente">Paula</h4>
+                            <h4 class="apellidopaciente">Lopez Perez</h4>
+                        </td>
+                        <td>
+                            <h4>maeillanes@hotmail.com</h4>
+                        </td>
+                        <td>
+                            <h4>254256958</h4>
+                        </td>
+                        <td>
+                            <h4>47095720T</h4>
+                        </td>
+                        <td>
+                            <h4 class="nocontagio">No contagiado</h4>
+                        </td>
+                        <td class="borderizq"> <img id="edit" src="imagenes/edit.png"></td>
+                    </tr>
+                    <tr>
+                        <td class="bordedrch">
+                            <h4 class="nombrepaciente">Diana</h4>
+                            <h4 class="apellidopaciente">Ferananda Frias</h4>
+                        </td>
+                        <td>
+                            <h4>fran.afull@live.cl</h4>
+                        </td>
+                        <td>
+                            <h4>365215445</h4>
+                        </td>
+                        <td>
+                            <h4>68791894K</h4>
+                        </td>
+                        <td>
+                            <h4 class="expirado">Contagio expirado</h4>
+                        </td>
+                        <td class="borderizq"> <img id="edit" src="imagenes/edit.png"></td>
+                    </tr>
+                    <tr>
+                        <td class="bordedrch">
+                            <h4 class="nombrepaciente">Daniel</h4>
+                            <h4 class="apellidopaciente">Torres Frias</h4>
+                        </td>
+                        <td>
+                            <h4>apalamosg@hotmail.com</h4>
+                        </td>
+                        <td>
+                            <h4>658452546</h4>
+                        </td>
+                        <td>
+                            <h4>38481589J</h4>
+                        </td>
+                        <td>
+                            <h4 class="estrecho">Contagio estrecho</h4>
+                        </td>
+                        <td class="borderizq"> <img id="edit" src="imagenes/edit.png"></td>
+                    </tr>
+                    <tr>
+                        <td class="bordedrch">
+                            <h4 class="nombrepaciente">Maria José</h4>
+                            <h4 class="apellidopaciente">Garcia Mora</h4>
+                        </td>
+                        <td>
+                            <h4>bad.girl.-@hotmail.es</h4>
+                        </td>
+                        <td>
+                            <h4>6516516515</h4>
+                        </td>
+                        <td>
+                            <h4>67890507G</h4>
+                        </td>
+                        <td>
+                            <h4 class="expirado">Contagio expirado</h4>
+                        </td>
+                        <td class="borderizq"> <img id="edit" src="imagenes/edit.png"></td>
+                    </tr>
+                    <tr>
+                        <td class="bordedrch">
+                            <h4 class="nombrepaciente">Paz</h4>
+                            <h4 class="apellidopaciente">Lopez Pilar</h4>
+                        </td>
+                        <td>
+                            <h4>pbg@endesa.cl</h4>
+                        </td>
+                        <td>
+                            <h4>1616516518</h4>
+                        </td>
+                        <td>
+                            <h4>75602566W</h4>
+                        </td>
+                        <td>
+                            <h4 class="nocontagio">No contagiado</h4>
+                        </td>
+                        <td class="borderizq"> <img id="edit" src="imagenes/edit.png"></td>
+                    </tr>
+                    <tr>
+                        <td class="bordedrch">
+                            <h4 class="nombrepaciente">Natalia</h4>
+                            <h4 class="apellidopaciente">Vivy Casa</h4>
+                        </td>
+                        <td>
+                            <h4>consuelo_caceres@hotmail.com</h4>
+                        </td>
+                        <td>
+                            <h4>6516516555</h4>
+                        </td>
+                        <td>
+                            <h4>71524656S</h4>
+                        </td>
+                        <td>
+                            <h4 class="activo">Contagio activo</h4>
+                        </td>
+                        <td class="borderizq"> <img id="edit" src="imagenes/edit.png"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    </div>
+    <div class="footer">
+
+        <img id="iconoXunta" src="imagenes/xunta.png">
+
+        <img id="galiciaLogo" src="imagenes/galiciaLogo.png">
+
+        <div id="copyright">
+            <h5>© Xunta de Galicia. Información mantida e publicada en internet pola Consellería de Sanidade e o
+                Servizo Galego de Saúde</h5>
+        </div>
+
+
+    </div>
+
+
+
+</body>
+<script>
+    var xValues = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+
+    var myChart = new Chart("myChart", {
+        type: "line",
+        data: {
+            labels: xValues,
+            
+            datasets: [{
+                //activos
+                label: 'Contagio activo',
+                data: [100, 500, 750, 1250, 1000, 854, 500, 526, 600, 700, 854, 900],
+                borderColor: "rgba(255, 0, 0)",
+                backgroundColor: "rgba(255, 0, 0, 0.2)",
+                
+
+
+                fill: true
+            }, {
+                //curados
+                data: [100, 600, 1500, 2000, 2500, 2652, 2999, 3211, 3500, 3750, 4000, 4500],
+                borderColor: "rgba(87, 204, 153)",
+                backgroundColor: "rgba(87, 204, 153, 0.2)",
+                label:"No contagiado",
+
+                fill: true
+            }, {
+                //contagio estrecho
+                data: [500, 700, 2000, 4500, 4750, 3500, 2000, 1000, 528, 1200, 1350, 1500],
+                borderColor: "rgba(247, 173, 103)",
+                backgroundColor: "rgba(247, 173, 103, 0.2)",
+                label:"Contagio estrecho",
+
+                fill: true
+            }]
+        },
+        options: {
+            responsive: true,
+            legend: { display: true },
+            
+            scales: {
+                xAxes: [{
+                    gridLines: {
+                        display: false
+                    },
+                    ticks: {
+                        display: false
+                    }
+                }],
+                yAxes: [{
+                    gridLines: {
+                        display: false
+                    },
+                    ticks: {
+                        display: false
+                    }
+                }]
+            }
+        }
+    });
+
+
+
+
+
+</script>
+</html>

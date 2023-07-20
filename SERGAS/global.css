@@ -1,49 +1,462 @@
-body {
-  background-color: aliceblue;
+@font-face {
+
+  font-family: VisbyRound-DemiBold;
+
+  src: url(fuentes/VisbyRoundCF-DemiBold.woff2);
+
 }
 
-.header {
-  padding: 30px;
-  text-align: center;
-  background: #59A5D8;
-  color: white;
-  font-size: 15px;
+
+
+@font-face {
+
+  font-family: VisbyRound-Light;
+
+  src: url(fuentes/VisbyRoundCF-Light.woff2);
+
 }
 
-.footer {
-  padding: 60px;
-  text-align: center;
-  background: #59A5D8;
-  color: white;
-  font-size: 15px;
+@font-face {
+
+  font-family: VisbyRound-Medium;
+
+  src: url(fuentes/VisbyRoundCF-Medium.woff2);
+
+}
+
+@font-face {
+
+  font-family: VisbyRound-Regular;
+
+  src: url(fuentes/VisbyRoundCF-Regular.woff2);
+
+}
+
+
+@font-face {
+
+  font-family: VisbyRound-ExtraLight;
+
+  src: url(fuentes/VisbyRoundCF-ExtraLight.woff2);
+
 }
 
 h1 {
-  font-size: 36px;
-  font-family: Visby Round CF;
-  font-style: Demi Bold;
+  font-size: 30px;
+  font-family: VisbyRound-DemiBold;
 }
 
 h2 {
-  font-size: 32px;
-  font-family: Visby Round CF;
-  font-style: Medium;
+  font-size: 26px;
+  font-family: VisbyRound-Medium;
+  
 }
 
 h3 {
-  font-size: 17px;
-  font-family: Visby Round CF;
-  font-style: Regular;
+  font-size: 15px;
+  font-family: VisbyRound-ExtraLight;
+  
 }
+
+#Alt h3 {
+  font-size: 11px;
+  font-family: VisbyRound-DemiBold;
+  
+}
+
 
 h4 {
   font-size: 15px;
-  font-family: Visby Round CF;
-  font-style: regular;
+  font-family: VisbyRound-Regular;
+  
 }
 
 h5 {
   font-size: 11px;
-  font-family: Visby Round CF;
-  font-style: Light;
+  font-family: VisbyRound-Light;
+  
 }
+
+
+body {
+  background-color: aliceblue;
+  margin: 0;
+}
+
+.header {
+  overflow: hidden;
+  width: 100%;
+  height: 100px;
+  background: #59a5d8;
+  position: relative;
+    bottom: 0;
+}
+
+.footer {
+  
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: #59a5d8;
+}
+
+.idiomas {
+  
+  margin-top: 25px;
+  float: right;
+  margin-right: 30px;
+  color: white;
+  text-align: end;
+}
+
+.idiomas h4 {
+  display: block;
+  margin-top: 1px;
+  margin-bottom: 3px;
+  
+  
+}
+
+#logoFotter {
+  float: right;
+}
+
+#iconoSergasAlt {
+  float: left;
+  width: auto;
+  height: 60px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+#textoSergasAlt {
+  float: left;
+  margin-top: 27px;
+  padding: 5px;
+  width: 110px;
+  height: auto;
+}
+
+#gallegoText {
+  font-size: 15px;
+  font-family: VisbyRound-ExtraLight;
+  color: #d9d9d9;
+}
+
+
+#logoUE {
+  margin-top: 23px;
+  margin-right: 25px;
+  display: block;
+  float: right;
+  width: auto;
+  height: 50px;
+}
+
+#iconoXunta {
+  margin-top: 20px;
+  margin-left: 25px;
+  display: block;
+  float: left;
+  width: auto;
+  height: 50px;
+}
+
+#galiciaLogo {
+  margin-top: 20px;
+  margin-right: 25px;
+  display: block;
+  float: right;
+  width: auto;
+  height: 50px;
+}
+
+#copyright  h5{
+  padding-top: 40px;
+  margin-left: 200px;
+  margin-right: 200px;
+  text-align: center;
+  color: white;
+  line-height: 0.813rem;
+}
+
+
+
+/* -----------------MODULOS (Usuario,resumen y grafica)---------------- */
+
+/* class para solo usuario y resumen */
+.contmodular {
+  height: 217px;
+  width: 100%;
+}
+
+/* class de todos los modulos */
+.modulos {
+  background: #FFFFFF;
+  border-radius: 1.625rem;
+  margin-left: 12.5rem;
+  overflow: hidden;
+} 
+
+/* -----------------------------USUARIO-------------------------------- */
+
+/* id de el div de usuario */
+#usuario {
+  width: 320px;
+  height: 150px;
+  margin-left: 20%;
+  margin-top: 50px;
+
+}
+
+/*id de la imagen del usuario */
+#userimg {
+  width: auto;
+  height: 100px;
+  margin-top: 14px;
+  margin-left: 10px;
+  max-width: 100%;
+}
+
+/*id de el nombre del usuario*/
+#nombreuser {
+  position: relative;
+  bottom: 100px;
+  left: 114px;
+}
+
+/* id de el estado del user (admin o usuario) */
+#estadouser {
+  position: relative;
+  bottom: 120px;
+  left: 114px;
+  color: #6C757D;
+}
+
+/* id de la flecha */
+#desplegableuser {
+  position: relative;
+  width: auto;
+  height: 25px;
+  bottom: 130px;
+  left: 272px;
+
+}
+
+
+/* -------------------------------RESUMEN------------------------------ */
+
+/* id del div de resumen semanal */
+#resumen {
+  position: relative;
+  width: 771px;
+  height: 150px;
+  margin-left: 752px;
+  bottom: 150px;
+}
+
+/* id del titulo del div */
+#resumensemanal {
+  position: relative;
+  text-align: center;
+  top: 7px;
+  margin: 0px;
+}
+
+hr {
+  width: 80%;
+
+}
+
+/* class de la tabla de estados */
+.estadoresumen {
+  margin-left: 30px;
+  text-align: center;
+  border-collapse: collapse;
+
+}
+
+/* class de las celdas de la tabla */
+.bordes {
+  padding: 0px 50px;
+  margin: 0px 0px;
+
+}
+
+.bordes h2 {
+  margin: 0px;
+}
+
+.bordes h3 {
+  margin: 0px;
+}
+
+/* id de cada numero de el resumen semanal para poner el color */
+#numactivo {
+  color: #F25C54;
+
+}
+
+#numestrecho {
+  color: #F7AD67;
+}
+
+#numnocontagiado {
+  color: #57CC99;
+
+}
+
+#numexpirado {
+  color: #6C757D;
+}
+
+
+/* -------------------------------GRAFICA------------------------------ */
+
+/* id de el div de la grafica */
+#grafica {
+  margin: auto;
+  width: 60%;
+  height: 560px;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+
+ 
+}
+
+
+
+/* id de la imagen de los usuarios de la grafica */
+#usergrafica {
+  position: absolute;
+  width: auto;
+  height: 100px;
+  left: 23%;
+  top: 450px;
+}
+
+/* id de el titulo del div */
+#contagiosactivos{
+  position: absolute;
+  color: #6C757D;
+  left:23%;
+  top: 370px;
+
+}
+
+
+/* ------------------------------DIV DE LA TABLA----------------------- */
+
+/* id de toda la tabla */
+#tabla {
+  margin: auto;
+  margin-top: 70px;
+  width: 60%;
+  height: 50rem;
+}
+
+/* hacer que deslice y no se vea la scrollbar */
+#tabla::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* ----------------------------------FILTROS--------------------------- */
+
+/* class del divi del buscador */
+.busqueda {
+  position: relative;
+  margin: auto;
+  border: 1px solid #b9b9b9;
+  border-radius: 20px;
+  height: 40px;
+  width: 90%;
+  transition: height 0.25s ease-out;
+  overflow: hidden;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.busqueda:hover {
+  height: 128px;
+  transition: height 0.25s ease-in;
+  border-radius: 20px;
+}
+
+/* id del icono de la lupa */
+#lupa {
+  position: relative;
+  margin-top: 11px;
+  margin-right: 8px;
+  float: right;
+  height: auto;
+  width: 16px;
+}
+
+/* id de los botones de los filtros */
+#filtros {
+  text-align: left;
+  margin-left: 5%;
+}
+
+/* id del texto (Buscar por nombre,estado...) */
+#busquedaTexto {
+  color: #6c757d;
+  margin-top: 10px;
+}
+#estadoAzul{
+  background-color: #e6f2f9;
+  color: #59a5d8;
+  border-color: #59a5d8;
+}
+/* class de cada boton del estado */
+.estado {
+  padding: 5px;
+  display: inline;
+  border: solid #b9b9b9 1px;
+  width: 15%;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+
+
+.estado:hover {
+  background-color: #e6f2f9;
+  color: #59a5d8;
+  border-color: #59a5d8;
+}
+
+/* class del circulo de color de cada estado */
+.bola {
+  display: inline-block;
+  border-radius: 100px;
+  height: 10px;
+  width: 10px;
+  margin-right: 0.5%;
+}
+
+/* color de cada bola de los botones de estado */
+#activo {
+  background-color: #f25c54;
+}
+
+#estrecho {
+  background-color: #f7ad67;
+}
+
+#noContagiado {
+  background-color: #57cc99;
+}
+
+#expirado {
+  background-color: #b9b9b9;
+}
+
+/* class del texto de cada boton de estado */
+.estadoTexto {
+  display: inline;
+  margin-right: 1%;
+}
+
+

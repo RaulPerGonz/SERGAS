@@ -1,0 +1,242 @@
+/* ---------------------------TABLA ESTADOS----------------------------- */
+/* class de la tabla de estados */
+.estados {
+  margin-left: 30px;
+  text-align: center;
+  border-collapse: collapse;
+
+}
+
+/* class de las celdas de la tabla */
+.bordes {
+  padding: 0px 50px;
+  margin: 0px 0px;
+
+}
+
+.bordes h2 {
+  margin: 0px;
+}
+
+.bordes h3 {
+  margin: 0px;
+}
+
+/* id de cada numero de el resumen semanal para poner el color */
+#numactivo {
+  color: #F25C54;
+
+}
+
+#numestrecho {
+  color: #F7AD67;
+}
+
+#numnocontagiado {
+  color: #57CC99;
+
+}
+
+#numexpirado {
+  color: #6C757D;
+}
+
+
+/* -------------------------------GRAFICA------------------------------ */
+
+/* id de el div de la grafica */
+#grafica {
+  margin-left: 381px;
+  width: 40%;
+  height: 320px;
+}
+
+/* -----------------------------AÑADIR PACIENTE------------------------ */
+
+
+.contmodular2 {
+  height: 235px;
+}
+
+/*id de el div de añadir paciente*/
+#añadirPaciente {
+  background-color: #ABE5CC;
+  position: relative;
+  width: 17%;
+  height: 320px;
+  margin-left: 1200px;
+  bottom: 319px;
+
+}
+
+/*id hover para que cambie de color al posicionar el raton encima del div*/
+#añadirPaciente:hover {
+  background-color: #8ec2ac;
+}
+
+/*id de el icono de añadir paciente*/
+#userañadirpaciente {
+  width: auto;
+  height: 100px;
+  margin-left: 210px;
+  position: relative;
+  bottom: 35px;
+}
+
+/* id's de el texto de añadir paciente */
+#altaPaciente1 {
+  margin-bottom: 0px;
+  margin-left: 20px;
+}
+
+#altaPaciente2 {
+  margin-top: 0px;
+  margin-left: 20px;
+}
+
+
+
+/* ---------------------------------TABLA------------------------------ */
+
+
+#tabla{
+  margin-top: 150px;
+}
+
+
+/* class de la tabla de pacientes */
+.tablapacientes {
+  border-collapse: collapse;
+  border: none;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-left: 45px;
+  margin-right: 15px;
+}
+
+
+.tablapacientes th {
+  text-align: left;
+  padding: 0px 40px;
+  color: #686262;
+
+}
+
+.nombrepaciente {
+  margin-bottom: 0px;
+
+}
+
+.apellidopaciente {
+  margin-top: 0px;
+}
+
+.tablapacientes td {
+  padding: 0px 27px;
+}
+
+/* class del borde izq para que sea redondeado */
+.borderizq {
+
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+/* class del borde derecho para que sea redondeado */
+.bordedrch {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+/* para hacer las tablas paraes de un color y las impares de otra */
+.tablapacientes tr:nth-child(even) {
+  background-color: #EDF8FF;
+}
+
+.tablapacientes tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+/* class para poner de color rojo el contagio activo */
+.activo {
+  color: #F25C54;
+}
+
+.estrecho {
+  color: #F7AD67;
+}
+
+.nocontagio {
+  color: #57CC99;
+}
+
+.expirado {
+  color: #6C757D;
+}
+
+/* id del icono editar */
+#edit {
+  position: relative;
+
+  margin-right: 8px;
+  float: right;
+  height: auto;
+  width: 43px;
+}
+
+/* id borde de editar */
+.bordeEditar {
+  border: solid #d9d9d9 1px;
+  position: relative;
+  border-radius: 100px;
+  padding-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+#bordeEditarEstado {
+  border: solid #d9d9d9 1px;
+  position: relative;
+  display: inline-block;
+  border-radius: 100px;
+  padding-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 140px;
+}
+
+/* id del icono de la flecha de cambiar el estado */
+#iconoFlecha {
+  height: 40px;
+  width: 20px;
+  position: absolute;
+  top: 22px;
+  right: 0px;
+}
+
+#iconoFlechaArriba {
+  position: absolute;
+  width: 10px;
+  height: auto;
+  margin: 0;
+}
+
+#iconoFlechaAbajo {
+  position: absolute;
+
+  width: 10px;
+  height: auto;
+  margin-top: 10px;
+}
+
+
+#myChart {
+  position: relative;
+  display: block;
+  left: -10px;
+  right: 0;
+  min-width: 102%;
+  max-height: 330px;
+  box-sizing: border-box;
+}
